@@ -1,1 +1,48 @@
-a s
+body {
+    margin: 0px;
+    font-family: "Roboto", Arial, sans-serif;
+    line-height: 1.42;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.header {
+    background: #4b73b5;
+    color: #fff;
+}
+
+.header .container {
+    position: relative;
+    height: 77px;
+}
+
+.logo {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+.company-contacts {
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.company-contacts__phone {
+    font-size: 21px;
+    text-decoration: none;
+    font-weight: bold;
+    color: inherit;
+}
+
+.company-contacts__text {
+    font-size: 14px;
+    font-weight: bold;
+    opacity: .7;
+}
