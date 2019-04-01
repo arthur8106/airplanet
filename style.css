@@ -4,12 +4,15 @@ body {
     line-height: 1.42;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    width: 1100px;
+    height: 2076px;
+    
 }
 
 .container {
     width: 1100px;
     margin: 0 auto;
-    
+    height: 2076px;
 }
 
 .header {
@@ -64,7 +67,83 @@ ul li {
     height: 299px;
 }
 
-.banner .nav {
+img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.banner .sidebar {
     display: inline-block;
     vertical-align: top;
 }
+
+.pagination__pages {
+    
+    vertical-align: middle;
+    text-align: center;
+}
+
+.pagination__pages-item {
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.pagination__display {
+    text-align: center;   
+}
+
+.pagination__prev {
+    text-align: center;   
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.latest-news__avatar {
+    overflow: hidden;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+}
+
+.nav__icon .nav__item {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.nav__icon {
+    width: 23px;
+    height: 18px;
+    background: center center no-repeat;
+}
+
+.nav__title {
+    letter-spacing: 2.4px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 54px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav__link--icon-main {
+    background-image: url("./file/menu/main_icon.png")
+}
+
+.nav__link--icon-feed {
+    background-image: url("./file/menu/feed_icon.png")
+}
+
+.nav__link--icon-team {
+    background-image: url("./file/menu/team_icon.png")
+}
+
+.sidebar {
+    float: left;
+}
+
+.banner--tarif-news {
+    float: right;
+}
+
