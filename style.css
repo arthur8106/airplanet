@@ -4,7 +4,6 @@ body {
     line-height: 1.42;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-      
 }
 
 .container {
@@ -137,12 +136,13 @@ img {
 }
 
 .sidebar {
-    display: inline-block 17%;
-    height: 17%; 
+    display: inline-block;
+    width: 17%; 
+    float: left;
 }
 
 .banner--tarif-news {
     display: inline-block;
-    height: 83%; 
+    width: 83%; 
 }
 
