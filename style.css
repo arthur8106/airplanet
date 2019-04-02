@@ -3,19 +3,19 @@
     padding: 0;
     box-sizing: border-box; }
   
-  .clearfix:after {
-    content: '';
-    display: table;
-    clear: both; }
+    .clearfix:after {
+        content: '';
+        display: table;
+        clear: both; }
   
   a {
     text-decoration: none; }
   
-  html,
+  
   body {
     width: 100%;
     height: 100%;
-    font-family: 'Roboto', Tahoma, Verdana, sans-serif; }
+    font-family: 'Roboto'; }
   
   .container {
     width: 1100px;
@@ -46,39 +46,7 @@
     letter-spacing: 2.4px;
     cursor: pointer; }
   
-  .btn-start-page {
-    transition: background-color 0.3s;
-    padding-right: 35px;
-    background-image: url("../img/icon-arrow-blue.png");
-    background-size: 15px;
-    background-position: 172px 13px;
-    background-repeat: no-repeat; }
-    .btn-start-page:hover {
-      background-color: #1c5bc3;
-      background-image: url("../img/icon-arrow-white.png");
-      color: #ffffff; }
   
-  .btn-send {
-    transition: background-color 0.3s;
-    padding-right: 35px;
-    background-color: #1c5bc3;
-    color: #ffffff;
-    background-image: url("../img/icon-arrow-white.png");
-    background-size: 15px;
-    background-position: 172px 13px;
-    background-repeat: no-repeat; }
-    .btn-send:hover {
-      background-image: url("../img/icon-arrow-blue.png");
-      background-color: #ffffff;
-      color: #1c5bc3; }
-  
-  .breadcrumbs {
-    margin-top: 35px;
-    margin-bottom: 15px;
-    font-style: italic;
-    font-size: 14px; }
-    .breadcrumbs a {
-      text-decoration: underline; }
   
   .pagination {
     font-size: 14px;
@@ -359,5 +327,3 @@
       font-size: 54px; }
       .tariff-item .tariff-price .dollar {
         font-size: 40px; }
-  
-  
