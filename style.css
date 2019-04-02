@@ -362,6 +362,6 @@ img {
     list-style-type: none;
 }
 
-.tariff__item {
+.tariff__name {
     text-transform: uppercase;
 }
