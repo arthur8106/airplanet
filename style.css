@@ -103,10 +103,6 @@ ul {
     padding: 0;
 }
 
-ul li {
-    list-style: none;
-}
-
 .banner {
     width: 1007px;
     height: 299px;
@@ -357,4 +353,15 @@ img {
     
 .pagination .pagination__items .pagination__item .arrow.inactive {
     color: #e8e8e8; 
+}
+
+.tariff {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.tariff__item {
+    text-transform: uppercase;
 }
