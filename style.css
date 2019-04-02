@@ -11,42 +11,91 @@ body {
     margin: 0 auto;
 }
 
-.header {
-    background: #4b73b5;
-    color: #fff;
+.main-header {
     height: 77px;
-    margin-bottom: 50px; 
+    background-color: #4b73b5;
+    margin-bottom: 10px; 
 }
-
-.header__conteiner {
+    
+.main-header .container {
+    padding: 0 20px; 
+}
+    
+.main-header__left {
+    float: left;
+    margin-top: 20px; 
+}
+    
+.main-header__right {
+    float: right; 
+}
+      
+.main-header__right .contacts {
     position: relative;
     height: 77px;
+    cursor: pointer; 
 }
 
-.logo {
-    display: inline-block;
-    position: absolute;
-    margin: 21px;
+.main-header__right .contacts:hover > .contacts__shedule-popup {
+    display: block; 
 }
 
-.company-contacts {
-    position: absolute;
-    right: 21px;
-    top: 20px;
-    text-align: right;
+.main-header__right .contacts:hover > .contacts__shedule {
+    opacity: 1; 
 }
-
-.company-contacts__phone {
+        
+.main-header__right .contacts a {
     font-size: 21px;
-    text-decoration: none;
-    font-weight: bold;
-    color: inherit;
+    font-weight: 700;
+    line-height: 54px;
+    text-transform: uppercase;
+    color: white; 
+}
+        
+.main-header__right .contacts__shedule {
+    display: block;
+    text-align: right;
+    position: relative;
+    top: -10px;
+    text-align: right;
+    color: #ffffff;
+    opacity: .7;
+    text-decoration: underline; 
+}
+        
+.main-header__right .contacts__shedule-popup {
+    display: none;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: -74px;
+    left: 12px;
+    padding: 20px;
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.2); 
+}
+          
+.main-header__right .contacts__shedule-popup::before {
+    border: 7px solid transparent;
+    border-bottom-color: white;
+    position: absolute;
+    bottom: 100%;
+    right: 4px;
+    content: ''; 
+}
+        
+.main-header__right .contacts__shedule-popup span {
+    display: block;
+    font-size: 14px; 
 }
 
-.company-contacts__text {
-    font-size: 14px;
+.main-header__right .contacts__shedule-popup .working-days {
+    color: #4b73b5;
     font-weight: bold;
-    opacity: .7;
+    line-height: 18px; 
+}
+
+.main-header__right .contacts__shedule-popup .lunch {
+    color: #221f1f;
+    font-weight: normal; 
 }
 
 ul {
@@ -146,3 +195,166 @@ img {
     width: 83%; 
 }
 
+.tariff {
+    display: inline-block;
+}
+
+.tariff__standard {
+    display: inline-block;
+    
+}
+
+.tariff__premium {
+    display: inline-block;
+}
+
+.tariff__lux {
+    display: inline-block;
+}
+
+.footer {
+    height: 77px;
+    background-color: #4b73b5;
+    color: #ffffff;
+    font-size: 14px; }
+
+.footer .container {
+    padding: 15px 40px; 
+}
+
+.footer .footer__left, .footer .footer__center, .footer .footer__right {
+    float: left;
+    width: 32%; 
+}
+
+.footer .footer__left a, .footer .footer__center a, .footer .footer__right a {
+    color: #ffffff; 
+}
+
+.footer .footer__left {
+    float: left; 
+}
+
+.footer .footer__left a {
+    text-decoration: underline; 
+}
+    
+.footer .footer__left a:hover {
+    text-decoration: none; 
+}
+    
+.footer .footer__center {
+    float: left;
+    margin: 5px auto; 
+}
+      
+.footer .footer__center .img {
+    display: block;
+    margin: 0 auto; 
+}
+    
+.footer .footer__right {
+    float: right; 
+}
+      
+.footer .footer__right .social {
+    float: right; 
+}
+
+.footer .footer__right .social .social__header {
+    margin-bottom: 10px; 
+}
+
+.footer .footer__right .social__icons {
+    list-style-type: none; }
+
+.footer .footer__right .social__icons .social__icon {
+    display: inline-block;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px; 
+}
+          
+.footer .footer__right .social__icons .social__icon .social__link {
+    position: relative;
+    display: block;
+    height: 100%;
+    background-color: #d2def3;
+    border-radius: 50%;
+    text-align: center; 
+}
+            
+.footer .footer__right .social__icons .social__icon .social__link:hover {
+    background-color: #ffffff; 
+}
+            
+.footer .footer__right .social__icons .social__icon .social__link .social__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+.pagination {
+    font-size: 14px;
+    margin-bottom: 60px; 
+}
+    
+.pagination__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination__wrapper .current-page {
+    margin-right: 10px; 
+}
+
+.paginationcurrent-page {
+    color: #656464; 
+}
+    
+.pagination .pagination__items {
+    display: flex;
+    list-style-type: none; 
+}
+      
+.pagination .pagination__items .pagination__item {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center; 
+}
+        
+.pagination .pagination__items .pagination__item.active {
+    background-color: #4b73b5;
+    border-radius: 3px; 
+}
+          
+.pagination .pagination__items .pagination__item.active a {
+    color: white; 
+}
+        
+.pagination .pagination__items .pagination__item a {
+    display: block;
+    color: black;
+    font-weight: bold; 
+}
+        
+.pagination .pagination__items .pagination__item a[class*="arrow"] {
+    position: relative;
+    top: -2px; 
+}
+          
+.pagination .pagination__items .pagination__item a:hover {
+    color: #1c5bc3; 
+}
+        
+.pagination .pagination__items .pagination__item .arrow {
+    color: black;
+    font-size: 10px; 
+}
+    
+.pagination .pagination__items .pagination__item .arrow.inactive {
+    color: #e8e8e8; 
+}

@@ -10,17 +10,25 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="header">
-            <div class="conteiner header__conteiner">
-                    <a href="#" class="logo"> 
-                        <img class="logo__picture" src="../airplanet/file/logo_header.png" alt="Логотип компании">
-                    </a>
-                    <div class="company-contacts">
-                        <a href="tel:+78000039210" class="company-contacts__phone">8 (800) 00-392-10</a>
-                        <div class="company-contacts__text">График работы</div>
+        <header class="main-header">
+            <div class="container clearfix">
+                <div class="main-header__left">
+                    <div class="main-header__logo">
+                        <a href="home.html" title="logo"><img src="./file/logo_header.png" alt="AirPlanet logo"></a>
                     </div>
+                </div>
+                <div class="main-header__right">
+                    <div class="contacts">
+                        <a href="tel:88000039210" title="call us">8 (800) 00-392-10</a>
+                        <div class="contacts__shedule">График работы</div>
+                        <div class="contacts__shedule-popup">
+                        <span class="working-days">пн-вс: 09:00-20:00</span>
+                        <span class="lunch">обед: 14:00-14:30</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </header>
+            </header>
         <div class="maincontent">
             <div class="conteiner">
                 <div class="sidebar">
@@ -35,7 +43,7 @@
                         </li>
                         <li class="nav__item">
                             <div class="nav__icon nav__link--icon-team"></div>
-                            <a href="#" class="nav__title">экипаж</a>       
+                            <a href="#" class="nav__title">Экипаж</a>       
                         </li>
                     </ul>
                 </div>
@@ -44,38 +52,53 @@
                 <div class="banner">
                     <img src="file/airbas.png" alt="Баннер" class="banner__preview-img">
                 </div>
-                <div class="tariff">
+            <ul class="tariff">
+                <li>
                     <div class="tariff__standard">
-                        <img src="#" alt="" class="tariff__standart-preview-img">
-                        <h2>Стандарт</h2>
+                        <img src="./file/tarif/flower.png" alt="" class="tariff__standart-preview-img">
+                    </div>
+                    <div class="tariff__standard--content">
+                        <h3>Стандарт</h3>
                         <p>Создан для вашего комфортного отдыха</p>
-                        <ul>
+                        <ul class="tariff__standard--contentt">
                             <li>Питание включено</li>
                             <li>Багаж (5 кг)</li>
                             <li>Детское кресло</li>
                         </ul>
+                        <div class="tariff__standard--content-price">$ 19</div>
                     </div>
+                </li>
+                <li>
                     <div class="tariff__premium">
-                            <img src="#" alt="" class="tariff__premium-preview-img">
-                            <h2>Премиум</h2>
-                            <p>Создан для вашего комфортного отдыха</p>
-                            <ul>
-                                <li>Питание включено</li>
-                                <li>Багаж (5 кг)</li>
-                                <li>Детское кресло</li>
-                            </ul>
+                        <img src="./file/tarif/mark-as-favorite-star.png" alt="" class="tariff__premium-preview-img">
                     </div>
-                    <div class="tariff__luxury">
-                            <img src="#" alt="" class="tariff__luxury-preview-img">
-                            <h2>Лакшери</h2>
-                            <p>Создан для вашего комфортного отдыха</p>
-                            <ul>
-                                <li>Питание включено</li>
-                                <li>Багаж (5 кг)</li>
-                                <li>Детское кресло</li>
-                            </ul>
+                    <div class="tariff__premium--content">
+                        <h3>Премиум</h3>
+                        <p>Для любителей хороших впечатлений</p>
+                        <ul class="tariff__premium--contentt">
+                            <li>Питание включено</li>
+                            <li>Багаж (5 кг)</li>
+                            <li>Детское кресло</li>
+                        </ul>
+                        <div class="tariff__premium--content-price">$ 39</div>
                     </div>
-                </div>
+                </li>
+                <li>
+                    <div class="tariff__lux">
+                        <img src="./file/tarif/painter-palette.png" alt="" class="tariff__lux-preview-img">
+                    </div>
+                    <div class="tariff__lux--content">
+                        <h3>Лакшери</h3>
+                        <p>Всё самое лучшее и незабываемое</p>
+                        <ul class="tariff__lux--contentt">
+                            <li>Питание включено</li>
+                            <li>Багаж (5 кг)</li>
+                            <li>Детское кресло</li>
+                        </ul>
+                        <div class="tariff__lux--content-price">$ 99</div>
+                    </div>
+                </li>
+            </ul>
                 <div class="latest-news">
                     <h2 class="latest-news__title">Последние новости</h2>
                     <ul class="latest-news__list">
@@ -112,37 +135,94 @@
                     </ul>
                 </div>
                 <div class="pagination">
-                    <div class="pagination__display">Страница 1 из 7</div>
-                    <div class="pagination__controlls">
-                        <a href="#" class="pagination__prev"><</a>
-                        <ul class="pagination__pages">
-                            <li class="pagination__pages-item">
-                                <a href="#" class="pagination__link">1</a>
+                    <div class="pagination__wrapper">
+                        <span class="pagination__current-page">Страница 1 из 7</span>
+                        <ul class="pagination__items">
+                            <li class="pagination__item">
+                                <a class="arrow pag-prev inactive" href="#prev">❮</a>
                             </li>
-                            <li class="pagination__pages-item">
-                                <a href="#" class="pagination__link">2</a>
+                            <li class="pagination__item active">
+                                <a href="#1">1</a>
                             </li>
-                            <li class="pagination__pages-item">
-                                <a href="#" class="pagination__link">3</a>
+                            <li class="pagination__item">
+                                <a href="#2">2</a>
                             </li>
-                            <li class="pagination__pages-item">
-                                <a href="#" class="pagination__link">4</a>
+                            <li class="pagination__item">
+                                <a href="#3">3</a>
                             </li>
-                            <li class="pagination__pages-item">
-                                <a href="#" class="pagination__link">5</a>
+                            <li class="pagination__item">
+                                <a href="#4">4</a>
                             </li>
-                            <li class="pagination__pages-item">
-                                <a href="#" class="pagination__link">6</a>
+                            <li class="pagination__item">
+                                <a href="#5">5</a>
                             </li>
-                            <li class="pagination__pages-item">
-                                <a href="#" class="pagination__link">7</a>
-                            </li>  
+                            <li class="pagination__item">
+                                <a href="#6">6</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="#7">7</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a class="arrow pag-next" href="#next">❯</a>
+                            </li>
                         </ul>
-                        <a href="#" class="pagination__prev">></a>
                     </div>
+                </div>
                 </div>
             </div>     
         </div>
+        <footer class="footer">
+            <div class="container clearfix">
+            <div class="footer__left">
+                Сделано с любовью и старанием<br>
+                на курсе «HTML + CSS» в <a href="https://loftschool.com" target="_blank">LoftSchool</a>.<br>
+                Автор работы: <strong>Артур Бутюгов</strong>
+            </div>
+            <div class="footer__center">
+            <div class="footer__logo">
+                <a href="/" title="logo">
+                <img class="img" src="./file/footer/logo.png" alt="AirPlanet logo">
+                </a>
+            </div>
+            </div>
+            <div class="footer__right">
+            <div class="social">
+            <div class="social__header">
+                Наши социальные сети
+            </div>
+            <div>
+            <ul class="social__icons">
+                <li class="social__icon">
+                    <a class="social__link" href="#">
+                        <img class="social__img" src="./file/footer/vk.png" alt="go to vk">
+                    </a>
+                </li>
+                <li class="social__icon">
+                    <a class="social__link" href="#">
+                        <img class="social__img" src="./file/footer/fb.png" alt="go to fb">
+                    </a>
+                </li>
+                <li class="social__icon">
+                    <a class="social__link" href="#">
+                        <img class="social__img" src="./file/footer/google.png" alt="go to google">
+                    </a>
+                </li>
+                <li class="social__icon">
+                    <a class="social__link" href="#">
+                        <img class="social__img" src="./file/footer/twitter.png" alt="go to twitter">
+                    </a>
+                </li>
+                <li class="social__icon">
+                    <a class="social__link" href="#">
+                        <img class="social__img" src="./file/footer/mail.png" alt="go to mail">
+                    </a>
+                </li>
+            </ul>
+            </div>
+            </div>
+            </div>
+            </div>
+    </footer>
     </div>
 </body>
 </html>
