@@ -368,7 +368,7 @@ body {
 
 .content .banner {
     height: 300px;
-    
+
 }
 
 .tariffs {
@@ -376,12 +376,12 @@ body {
 }
 
 .tariff-item__nav {
-    display: inline-block; 
-    
+    display: inline-block;
+
 }
 
 .tariff-item:nth-child(3n) {
-    margin-right: 0; 
+    margin-right: 0;
 }
 
 .tariff-item {
@@ -393,7 +393,7 @@ body {
     text-align: center;
     border: 1px solid transparent;
     border-radius: 5px;
-    
+
 }
 
 .tariff-item__img-place {
@@ -413,14 +413,19 @@ body {
     letter-spacing: 2.88px;
     line-height: 51.38px;
     color: #212121;
-    
+
 }
 
 .tariff-item__description {
     line-height: 30px;
     font-size: 18px;
     color: #221f1f;
-    text-align: center;
+    width: 188px;
+    height: 152px;
+    color: #221f1f;
+    font-family: Roboto;
+    font-weight: 300;
+
 }
 
 .tariff-item__description-header {
@@ -432,14 +437,25 @@ body {
     text-align: left;
     list-style-type: disc;
     width: 185px;
-    
+    padding: 0;
+    margin: 0;
 }
 
-.tariff-item .tariff-price {
+.tariff-price {
+    width: 72px;
+    height: 40px;
+    color: #212121;
+    font-family: Roboto;
+    font-weight: 400;
     font-size: 54px;
+    letter-spacing: -1.07px;
+    line-height: 173.58px;
+    padding: 10px 52px 50px 40px; 
 }
 
-.tariff-item .tariff-price .dollar {
+.dollar {
+    color: #202020;
+    line-height: 182.3px;
     font-size: 40px;
 }
 
@@ -458,6 +474,7 @@ body {
     font-size: 30px;
     margin-bottom: 30px;
     padding: 30px;
+    border: 1px solid transparent;
 }
 
 .block_item:nth-child(3n) {
@@ -468,7 +485,5 @@ body {
     border: 1px solid #e8e9ed;
     margin-top: -4px;
     height: 456px;
-    
-}
 
-list-style-type: disc;
+}
