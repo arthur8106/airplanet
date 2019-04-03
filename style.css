@@ -112,6 +112,7 @@ body {
 .list {
     padding-top: 20px;
     border-bottom: 2px solid #f5f5f5;
+    list-style-type: none;
 }
 
 .list__left {
@@ -469,3 +470,5 @@ body {
     height: 456px;
     
 }
+
+list-style-type: disc;
