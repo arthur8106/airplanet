@@ -486,9 +486,15 @@ body {
 .reviews__avatar {
     float: left;
     border-radius: 50%;
+    
+   
 }
 
 .reviews__description {
     float: left;
-
 }
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
