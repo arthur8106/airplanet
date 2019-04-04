@@ -485,14 +485,12 @@ body {
 
 .reviews__avatar {
     float: left;
-    margin-right: 17px;
-    width: 160px;
-    height: 160px;
-    overflow: hidden;
+
+    
     border-radius: 50%;
 }
 
 .reviews__description {
-    float: left;
+    
 
 }
