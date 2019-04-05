@@ -12,255 +12,197 @@
 
 <body>
     <div class="wrapper">
-        <header class="main-header">
-            <div class="container clearfix">
-                <div class="main-header__left">
-                    <div class="main-header__logo">
-                        <a href="#" title="logo"><img src="./file/logo_header.png" alt="AirPlanet logo"></a>
-                    </div>
-                </div>
-                <div class="main-header__right">
-                    <div class="contacts">
-                        <a href="tel:88000039210" title="call us">8 (800) 00-392-10</a>
-                        <div class="contacts__shedule">График работы</div>
-                        <div class="contacts__shedule-popup">
-                            <span class="working-days">пн-вс: 09:00-20:00</span>
-                            <span class="lunch">обед: 14:00-14:30</span>
-                        </div>
-                    </div>
+        <header class="header">
+            <div class="container">
+                <a href="#" class="header__logo" title="logo">
+                    <img class="logo_picture" src="./file/logo_header.png" alt="AirPlanet logo">
+                </a>
+                <div class="header__contacts">
+                    <a href="tel:+78002000505" class="header__phone">8-800-200-05-05</a>
+                    <span href="#" class="header__shedule">График работы</span>
                 </div>
             </div>
         </header>
-        <div class="container clearfix">
-            <nav class="nav">
-                <ul class="nav__items">
-                    <li class="nav__item">
-                        <a class="nav__link link-home actinav__link link-home active" href="#">Главная</a>
+
+        <main class="main">
+            <div class="container">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link nav__link-main">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link nav__link-rw">Отзывы</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link nav__link-pr">Экипаж</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </main>
+
+        <main class="content">
+            <div class="banner">
+                <img src="./file/airbas.png" alt="">
+            </div>
+
+            <div class="tariffs">
+                <h2 class="heading">Тарифы</h2>
+                <ul class="block_list">
+                    <li class="block_item">
+                        <div class="tariff-item__img-place">
+                            <img class="tariff-item__img" src="./file/tarif/flower.png" alt="">
+                        </div>
+                        <h3 class="tariff-item__name">Стандарт</h3>
+                        <div class="tariff-item__description">
+                            <p class="tariff-item__description-header">
+                                Создан для вашего комфортного отдыха
+                            </p>
+                            <ul class="tariff-item__description-text">
+                                <li>Питание включено</li>
+                                <li>Багаж (5 кг)</li>
+                                <li>Детское кресло</li>
+                            </ul>
+                        </div>
+                        <div class="tariff-price">
+                            <span class="dollar">$</span>19
+                        </div>
                     </li>
-                    <li class="nav__item">
-                        <a class="nav__link link-testimonials" href="#">Отзывы</a>
+                    <li class="block_item">
+                        <div class="tariff-item__img-place">
+                            <img class="tariff-item__img" src="./file/tarif/mark-as-favorite-star.png" alt="">
+                        </div>
+                        <h3 class="tariff-item__name">Премиум</h3>
+
+                        <div class="tariff-item__description">
+                            <p class="tariff-item__description-header">
+                                Для любителей хороших впечатлений
+                            </p>
+                            <ul class="tariff-item__description-text">
+                                <li>Питание включено</li>
+                                <li>Багаж (5 кг)</li>
+                                <li>Детское кресло</li>
+                            </ul>
+                        </div>
+                        <div class="tariff-price">
+                            <span class="dollar">$</span>39
+                        </div>
                     </li>
-                    <li class="nav__item">
-                        <a class="nav__link link-staff" href="#">Экипаж</a>
+                    <li class="block_item">
+                        <div class="tariff-item__img-place">
+                            <img class="tariff-item__img" src="./file/tarif/painter-palette.png" alt="">
+                        </div>
+                        <h3 class="tariff-item__name">Лакшери</h3>
+                        <div class="tariff-item__description">
+                            <p class="tariff-item__description-header">
+                                Всё самое лучшее и незабываемое
+                            </p>
+                            <ul class="tariff-item__description-text">
+                                <li>Питание включено</li>
+                                <li>Багаж (5 кг)</li>
+                                <li>Детское кресло</li>
+                            </ul>
+                        </div>
+                        <div class="tariff-price">
+                            <span class="dollar">$</span>99
+                        </div>
                     </li>
                 </ul>
-            </nav>
-            <main class="content">
-                <div class="banner">
-                    <img src="./file/airbas.png" alt="">
-                </div>
 
-                <div class="tariffs">
-                    <h2 class="heading">Тарифы</h2>
-                    <ul class="block_list">
-                        <li class="block_item">
-                            <div class="tariff-item__img-place">
-                                <img class="tariff-item__img" src="./file/tarif/flower.png" alt="">
+                <div class="reviews">
+                    <h3 class="section-title">Отзывы</h3>
+                    <ul class="reviews__list">
+                        <li class="reviews__item">
+                            <div class="reviews__avatar">
+                                <img src="./file/otziv/1.png" class="reviews__avatar-pic" alt="">
                             </div>
-                            <h3 class="tariff-item__name">Стандарт</h3>
-                            <div class="tariff-item__description">
-                                <p class="tariff-item__description-header">
-                                    Создан для вашего комфортного отдыха
-                                </p>
-                                <ul class="tariff-item__description-text">
-                                    <li>Питание включено</li>
-                                    <li>Багаж (5 кг)</li>
-                                    <li>Детское кресло</li>
-                                </ul>
-                            </div>
-                            <div class="tariff-price">
-                                <span class="dollar">$</span>19
+                            <div class="reviews__description">
+                                <div class="reviews__date">12.10.2016 г.</div>
+                                <div class="reviews__header">Ночные перелёты дешевле!
+                                </div>
+                                <p class="reviews__description-text">Летящий в ночном небе самолет — зрелище
+                                    загадочное и романтическое.
+                                    Крылатая машина величественно плывет в вышине, мерцая разноцветными огнями, и
+                                    почему-то кажется, что
+                                    она наполнена удивительными людьми, спешащими далеко-далеко по очень важным
+                                    делам.</p>
                             </div>
                         </li>
-                        <li class="block_item">
-                            <div class="tariff-item__img-place">
-                                <img class="tariff-item__img" src="./file/tarif/mark-as-favorite-star.png" alt="">
+                        <li class="reviews__item">
+                            <div class="reviews__avatar">
+                                <img src="./file/otziv/2.png" class="reviews__avatar-pic" alt="">
                             </div>
-                            <h3 class="tariff-item__name">Премиум</h3>
-
-                            <div class="tariff-item__description">
-                                <p class="tariff-item__description-header">
-                                    Для любителей хороших впечатлений
-                                </p>
-                                <ul class="tariff-item__description-text">
-                                    <li>Питание включено</li>
-                                    <li>Багаж (5 кг)</li>
-                                    <li>Детское кресло</li>
-                                </ul>
-                            </div>
-                            <div class="tariff-price">
-                                <span class="dollar">$</span>39
+                            <div class="reviews__description">
+                                <div class="reviews__date">01.02.2016 г.</div>
+                                <div class="reviews__header">Путешествие в Грузию стало доступ
+                                </div>
+                                <p class="reviews__description-text">Экскурсии по Грузии в 2017 году от русских
+                                    гидов: самые интересные
+                                    маршруты в Грузии от профессиональных гидов. Обзорные, пешеходные,
+                                    автомобильные, тематические
+                                    экскурсии по интересным городам и курортам Грузии. Не пропустите такую
+                                    возможность!</p>
                             </div>
                         </li>
-                        <li class="block_item">
-                            <div class="tariff-item__img-place">
-                                <img class="tariff-item__img" src="./file/tarif/painter-palette.png" alt="">
+                        <li class="reviews__item">
+                            <div class="reviews__avatar">
+                                <img src="./file/otziv/3.png" class="reviews__avatar-pic" alt="">
                             </div>
-                            <h3 class="tariff-item__name">Лакшери</h3>
-                            <div class="tariff-item__description">
-                                <p class="tariff-item__description-header">
-                                    Всё самое лучшее и незабываемое
+                            <div class="reviews__description">
+                                <div class="reviews__date">22.12.2015 г.</div>
+                                <div class="reviews__header">Детские авиабилеты доступны для бизнес-класса
+                                </div>
+                                <p class="reviews__description-text">Путешествие на самолете с детьми - небольшое
+                                    испытание для
+                                    родителей. Но это не экстремальное приключение, а обычный цивилизованный поход.
+                                    Тем более, различные
+                                    авиакомпании стараются помочь скидками на детские авиабилеты, специальным
+                                    питанием и другими
+                                    услугами на борту лайнера.
                                 </p>
-                                <ul class="tariff-item__description-text">
-                                    <li>Питание включено</li>
-                                    <li>Багаж (5 кг)</li>
-                                    <li>Детское кресло</li>
-                                </ul>
-                            </div>
-                            <div class="tariff-price">
-                                <span class="dollar">$</span>99
                             </div>
                         </li>
                     </ul>
+                </div>
 
-                    <div class="items-list">
-                        <h2 class="heading">Последние новости</h2>
-                        <ul class="list">
-                            <li>
-                                <div class="list__left">
-                                    <img class="list__img" src="./file/otziv/1.png" alt="">
-                                </div>
-                                <div class="list__right">
-                                    <div class="list__time">
-                                        12.10.2016 г.
-                                    </div>
-                                    <h3 class="list__title">Ночные перелёты дешевле!</h3>
-                                    <p class="list__text">
-                                        Летящий в ночном небе самолет — зрелище загадочное и романтическое. Крылатая
-                                        машина
-                                        величественно плывет в вышине, мерцая разноцветными огнями, и почему-то кажется,
-                                        что
-                                        она наполнена удивительными людьми, спешащими далеко-далеко по очень важным
-                                        делам.
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="list__left">
-                                    <img class="list__img" src="./file/otziv/2.png" alt="">
-                                </div>
-                                <div class="list__right">
-                                    <div class="list__time">
-                                        01.02.2016 г.
-                                    </div>
-                                    <h3 class="list__title">Путешествие в Грузию стало доступ</h3>
-                                    <p class="list__text">
-                                        Экскурсии по Грузии в 2017 году от русских гидов: самые интересные маршруты в
-                                        Грузии
-                                        от профессиональных гидов. Обзорные, пешеходные, автомобильные, тематические
-                                        экскурсии по интересным городам и курортам Грузии. Не пропустите такую
-                                        возможность!
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="list__left">
-                                    <img class="list__img" src="./file/otziv/3.png" alt="">
-                                </div>
-                                <div class="list__right">
-                                    <div class="list__time">
-                                        22.12.2015 г.
-                                    </div>
-                                    <h3 class="list__title">Детские авиабилеты доступны для бизнес-класса</h3>
-                                    <p class="list__text">
-                                        Путешествие на самолете с детьми - небольшое испытание для родителей.
-                                        Но это не экстремальное приключение, а обычный цивилизованный поход.
-                                        Тем более, различные авиакомпании стараются помочь скидками на детские
-                                        авиабилеты,
-                                        специальным питанием и другими услугами на борту лайнера.
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="reviews">
-                            <h3 class="section-title">Отзывы</h3>
-                            <ul class="reviews__list">
-                                <li class="reviews__item">
-                                    <div class="reviews__avatar clearfix">
-                                        <img src="./file/otziv/1.png" class="reviews__avatar-pic" alt="">
-                                    </div>
-                                    <div class="reviews__description">
-                                        <div class="reviews__date">12.10.2016 г.</div>
-                                        <div class="reviews__header">Ночные перелёты дешевле!
-                                        </div>
-                                        <p class="reviews__description-text">Летящий в ночном небе самолет — зрелище загадочное и романтическое.
-                                            Крылатая машина величественно плывет в вышине, мерцая разноцветными огнями, и почему-то кажется, что
-                                            она наполнена удивительными людьми, спешащими далеко-далеко по очень важным делам.</p>
-                                    </div>
-                                </li>
-                                <li class="reviews__item">
-                                    <div class="reviews__avatar">
-                                        <img src="./file/otziv/2.png" class="reviews__avatar-pic" alt="">
-                                    </div>
-                                    <div class="reviews__description">
-                                        <div class="reviews__date">01.02.2016 г.</div>
-                                        <div class="reviews__header">Путешествие в Грузию стало доступ
-                                        </div>
-                                        <p class="reviews__description-text">Экскурсии по Грузии в 2017 году от русских гидов: самые интересные
-                                            маршруты в Грузии от профессиональных гидов. Обзорные, пешеходные, автомобильные, тематические
-                                            экскурсии по интересным городам и курортам Грузии. Не пропустите такую возможность!</p>
-                                    </div>
-                                </li>
-                                <li class="reviews__item">
-                                    <div class="reviews__avatar">
-                                        <img src="./file/otziv/3.png" class="reviews__avatar-pic" alt="">
-                                    </div>
-                                    <div class="reviews__description">
-                                        <div class="reviews__date">22.12.2015 г.</div>
-                                        <div class="reviews__header">Детские авиабилеты доступны для бизнес-класса
-                                        </div>
-                                        <p class="reviews__description-text">Путешествие на самолете с детьми - небольшое испытание для
-                                            родителей. Но это не экстремальное приключение, а обычный цивилизованный поход. Тем более, различные
-                                            авиакомпании стараются помочь скидками на детские авиабилеты, специальным питанием и другими
-                                            услугами на борту лайнера.
-                        
-                                        </p>
-                                    </div>
-                                </li>
-                        
-                            </ul>
-                        
-                        </div>
-
-                    <div class="pagination">
-                        <span class="pagination__current-page">Страница 1 из 7</span>
-                        <ul class="pagination__items">
-                            <span class="pagination__item">
-                                <a class="arrow pag-prev inactive" href="#prev">❮</a>
-                            </span>
-                            <li class="pagination__item active">
-                                <a href="#1">1</a>
-                            </li>
-                            <li class="pagination__item">
-                                <a href="#2">2</a>
-                            </li>
-                            <li class="pagination__item">
-                                <a href="#3">3</a>
-                            </li>
-                            <li class="pagination__item">
-                                <a href="#4">4</a>
-                            </li>
-                            <li class="pagination__item">
-                                <a href="#5">5</a>
-                            </li>
-                            <li class="pagination__item">
-                                <a href="#6">6</a>
-                            </li>
-                            <li class="pagination__item">
-                                <a href="#7">7</a>
-                            </li>
-                            <span class="pagination__item">
-                                <a class="arrow pag-next" href="#next">❯</a>
-                            </span>
-                        </ul>
-                    </div>
-            </main>
-        </div>
+                <div class="pagination">
+                    <span class="pagination__page">Страница 1 из 7</span>
+                    <ul class="pagination__items">
+                        <span class="pagination__item">
+                            <a class="arrow pag-prev inactive" href="#prev">❮</a>
+                        </span>
+                        <li class="pagination__item active">
+                            <a href="#1">1</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#2">2</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#3">3</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#4">4</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#5">5</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#6">6</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#7">7</a>
+                        </li>
+                        <span class="pagination__item">
+                            <a class="arrow pag-next" href="#next">❯</a>
+                        </span>
+                    </ul>
+                </div>
+        </main>
+    </div>
     </div>
     <footer class="footer">
-        <div class="container clearfix">
+        <div class="container">
             <div class="footer__left">
                 Сделано с любовью и старанием<br>
                 на курсе «HTML + CSS» в <a href="https://loftschool.com" target="_blank">LoftSchool</a>.<br>
@@ -306,14 +248,10 @@
                             </a>
                         </li>
                     </ul>
-
                 </div>
             </div>
         </div>
     </footer>
-
-    
-
 </body>
 
 </html>
