@@ -4,7 +4,8 @@
     padding: 0;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     width: 100%;
 }
@@ -15,4 +16,150 @@ li {
 
 a {
     text-decoration: none;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background-color: #4b73b5;
+    height: 77px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 18px 0;
+}
+
+.footer {
+    height: 77px;
+    background-color: #4b73b5;
+    margin-top: -77px;
+    width: 100%;
+}
+
+.footer__container {
+    height: 100%
+}
+
+.header__container {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    padding-bottom: 75px;
+}
+
+.header__logo {
+    float: left;
+    width: 30%;
+}
+
+.header__contacts {
+    width: 30%;
+    float: right;
+    font-size: 24px;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.maincontent {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.block {
+    display: flex;
+    width: 740px;
+    margin: 0 auto;
+
+}
+
+.block__item {
+    width: 250px;
+    height: 456px;
+    margin-right: 70px;
+    text-align: center;
+    border: 1px solid transparent;
+}
+
+.block__item:last-child {
+    margin-right: 0;
+}
+
+.block__item:hover {
+    border-radius: 5px;
+    border: 1px solid #e8e9ed;
+}
+
+
+.block__img {
+    width: 68px;
+    height: 68px;
+    background-color: #4b73b5;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.block__text {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.block__description--header {
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.list__item {
+    list-style-type: disc;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    list-style-position: inside;
+}
+
+.heading__text {
+    color: #221f1f;
+    font-family: Roboto;
+    font-size: 49px;
+    font-weight: 700;
+    line-height: 38px;
+
+}
+
+.list {
+    text-align: left;
+}
+
+.price {
+    color: #212121;
+    font-family: Roboto;
+    font-size: 54px;
+    font-weight: 400;
+    letter-spacing: -1.07px;
+    line-height: 173.58px;
+}
+
+.price span {
+    color: #202020;
+    line-height: 182.3px;
+    font-size: 40px;
+}
+
+.reviews {
+    display: flex;
 }
